@@ -1,0 +1,872 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* CSS GERAL */
+/* CSS GERAL */
+/* CSS GERAL */
+/* CSS GERAL */
+/* CSS GERAL */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    z-index: 1;
+    list-style: none;
+}
+
+*::-webkit-scrollbar {
+    width: 0px;
+}
+
+:root {
+    --fundo: #000;
+    --letter: #ffffff;
+    --subletter: #3c82b1;
+}
+
+body { 
+    display: flex;
+    flex-direction: column;
+    background-color: var(--fundo);
+}
+
+/* CSS SMOKE */
+/* CSS SMOKE */
+/* CSS SMOKE */
+/* CSS SMOKE */
+/* CSS SMOKE */
+
+.smoke1 {
+    background-color: var(--subletter);
+    width: 600px;
+    height: 500px;
+    position: absolute;
+    border-radius: 50% 70% 10% 20%;
+    z-index: 0;
+    bottom: 0;
+    right: 0;
+    filter: blur(300px);
+}
+
+.smoke2 {
+    background-color: var(--subletter);
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    border-radius: 10% 20% 50% 70%;
+    z-index: 0;
+    top: 1600px;
+    left: 0;
+    filter: blur(340px);
+}
+
+.smoke3 {
+    background-color: var(--subletter);
+    width: 400px;
+    height: 150px;
+    position: absolute;
+    border-radius: 10% 20% 80% 90%;
+    z-index: 0;
+    filter: blur(145px);
+    left: 30%;
+}
+
+.smoke4 {
+    background-color: var(--subletter);
+    width: 600px;
+    height: 250px;
+    position: absolute;
+    border-radius: 10% 50% 20% 70%;
+    z-index: 0;
+    filter: blur(250px);
+    right: 0;
+    top: 2600px;
+
+}
+
+.smoke5 {
+    background-color: var(--subletter);
+    width: 700px;
+    height: 350px;
+    position: absolute;
+    border-radius: 10% 50% 20% 70%;
+    z-index: 0;
+    filter: blur(200px);
+    left: 0;
+    top: 2800px;
+}
+
+.smoke6 {
+    background-color: var(--subletter);
+    width: 150px;
+    height: 120px;
+    position: absolute;
+    border-radius: 10% 50% 20% 70%;
+    z-index: 0;
+    filter: blur(50px);
+    right: 550px;
+    top: 3500px;
+}
+
+/* CSS NAV MENU */
+/* CSS NAV MENU */
+/* CSS NAV MENU */
+/* CSS NAV MENU */
+/* CSS NAV MENU */
+
+.navmenu {
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    z-index: 2;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    ul {
+        display: flex;
+    }
+}
+
+.navsep1 {
+    width: 40%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    padding-left: 70px;
+}
+
+.navsep1 h1 {
+    color: var(--subletter);
+    font-size: 30px;
+}
+
+.navsep2 {
+    width: 60%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-right: 70px;
+    gap: 40px;
+}
+
+.item-menu {
+    color: var(--letter);
+}
+
+.item-menu:hover {
+    color: var(--subletter);
+    font-weight: bold;
+    border-bottom: 2px solid var(--subletter);
+}
+
+.selected {
+    color: var(--subletter);
+    font-weight: bold;
+    border-bottom: 2px solid var(--subletter);
+}
+
+/* CSS DIV TITLE */
+/* CSS DIV TITLE */
+/* CSS DIV TITLE */
+/* CSS DIV TITLE */
+/* CSS DIV TITLE */
+
+.title {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.title h1 {
+    color: var(--subletter);
+    letter-spacing: 10px;
+    font-size: 30px;
+}
+
+.title2 {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.title2 h1 {
+    color: var(--subletter);
+    letter-spacing: 10px;
+    font-size: 30px;
+}
+
+.title3 {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.title3 h1 {
+    color: var(--subletter);
+    letter-spacing: 10px;
+    font-size: 30px;
+}
+
+/* CSS DIV PRINCIPAL */ 
+/* CSS DIV PRINCIPAL */ 
+/* CSS DIV PRINCIPAL */ 
+/* CSS DIV PRINCIPAL */ 
+/* CSS DIV PRINCIPAL */ 
+
+.principal {
+    width: 100vw;
+    height: calc(100vh - 100px);
+    margin-top: 100px;
+    display: flex;
+}
+
+.sepprin1 {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sepprin1 img {
+    width: 580px;
+    height: 580px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: all 0.3s;
+}
+
+
+.sepprin1 img:hover {
+    box-shadow: 0 0 80px 0px var(--subletter);
+}
+
+.sepprin2 {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sepprin2 h1 {
+    font-size: 60px;
+    color: var(--letter);
+
+    span {
+        color: var(--subletter);
+    }
+}
+
+.sepprin2 h2 {
+    font-size: 35px;
+    color: var(--letter);
+    margin-bottom: 15px;
+
+    span {
+        color: var(--subletter);
+    }
+}
+
+.sepprin2 p {
+    font-size: 18px;
+    color: var(--letter);
+    margin-bottom: 20px;
+}
+
+.icons {
+    margin-bottom: 15px;
+    display: flex;
+    gap: 15px;
+}
+
+.icon {
+    border: 1px solid var(--subletter);
+    color: var(--subletter);
+    font-size: 20px;
+    display: flex;
+    padding: 10px;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.icon:hover {
+    background-color: var(--subletter);
+    color: var(--fundo);
+    box-shadow: 0 0 20px 2px var(--subletter);
+}
+
+.contratar {
+    width: 150px;
+    height: 50px;
+    font-size: 16px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--subletter);
+    color: var(--subletter);
+    background-color: var(--fundo);
+    transition: all 0.3s;
+}
+
+.contratar:hover {
+    width: 205px;
+    background-color: var(--subletter);
+    box-shadow: 0 0 20px 2px var(--subletter);
+    color: var(--fundo);
+}
+
+/* CSS DIV SERVICES */
+/* CSS DIV SERVICES */
+/* CSS DIV SERVICES */
+/* CSS DIV SERVICES */
+/* CSS DIV SERVICES */
+
+.services {
+    padding: 50px;
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.trab {
+    width: 500px;
+    height: 400px;
+    border-radius: 10px;
+    border: 1px solid var(--subletter);
+    transition: all 0.3s;
+}
+
+.trab:hover {
+    background-color: var(--subletter);
+    box-shadow: 0 0 40px 2px var(--subletter);
+}
+
+/* CSS DIV SKILLS */
+/* CSS DIV SKILLS */
+/* CSS DIV SKILLS */
+/* CSS DIV SKILLS */
+/* CSS DIV SKILLS */
+
+.skills {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sepskills {
+    width: 70%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.skill {
+    width: 15%;
+    height: 300px;
+    border: 1px solid var(--subletter);
+    border-radius: 10px;
+    transition: all 0.3s;
+    color: var(--subletter);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.skill i {
+    font-size: 120px;
+}
+
+.skill p {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.skill:hover {
+    background-color: var(--subletter);
+    box-shadow: 0 0 40px 2px var(--subletter);
+    color: var(--fundo);
+}
+
+/* CSS DIV CONTACT */
+/* CSS DIV CONTACT */
+/* CSS DIV CONTACT */
+/* CSS DIV CONTACT */
+/* CSS DIV CONTACT */
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.contact {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sepcontact {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid var(--subletter);
+    padding: 80px;
+    border-radius: 10px;
+    backdrop-filter: blur(60px);
+}
+
+.input1 {
+    background-color: var(--fundo);
+    border: 1px solid var(--subletter);
+    height: 60px;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: var(--subletter);
+    caret-color: var(--subletter);
+    padding: 0px 20px 0px 20px;
+}
+
+.input1:focus {
+    border-color: var(--subletter);
+    outline: none;
+}
+
+.input2 {
+    background-color: var(--fundo);
+    border: 1px solid var(--subletter);
+    min-height: 140px;
+    max-height: 300px;
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: var(--subletter);
+    caret-color: var(--subletter);
+    padding: 20px 20px 0px 20px;
+}
+
+.input2:focus {
+    border-color: var(--subletter);
+    outline: none;
+}
+
+.input1::placeholder, .input2::placeholder {
+    color: var(--subletter);
+}
+
+.send {
+    width: 220px;
+    height: 60px;
+    border-radius: 10px;
+    border: 1px solid var(--subletter);
+    background-color: var(--fundo);
+    color: var(--subletter);
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.send:hover {
+    background-color: var(--subletter);
+    color: var(--fundo);
+}
+
+@media (max-width: 1620px) {
+    .sepprin1 img {
+        width: 480px;
+        height: 480px;
+    }
+
+    .skill {
+        width: 20%;
+    }
+}
+
+@media (max-width: 1330px) {
+
+    .sepprin1 img {
+        width: 350px;
+        height: 350px;
+    }
+
+    .sepprin1 img:hover {
+        box-shadow: 0 0 40px 0px var(--subletter);
+    }
+    
+    .sepprin2 h1 {
+        font-size: 40px;
+        color: var(--letter);
+    
+        span {
+            color: var(--subletter);
+        }
+    }
+    
+    .sepprin2 h2 {
+        font-size: 25px;
+        color: var(--letter);
+        margin-bottom: 15px;
+    
+        span {
+            color: var(--subletter);
+        }
+    }
+    
+    .sepprin2 p {
+        font-size: 16px;
+        color: var(--letter);
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 1130px) {
+    
+    .trab {
+        width: 400px;
+        height: 300px;
+    }
+}
+
+@media (max-width: 1200px) {
+
+    .skill {
+        width: 30%;
+    }
+
+    .sepcontact {
+        width: 60%;
+    }
+}
+
+@media (max-width: 1050px) {
+
+    .sepprin1 img {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media (max-width: 935px) {
+
+    .trab {
+        width: 350px;
+    }
+}
+
+@media (max-width: 875px) {
+
+    .principal {
+        flex-direction: column;
+    }
+
+    .sepprin1, .sepprin2 {
+        width: 100%;
+    }
+
+    .sepprin1 img {
+        width: 350px;
+        height: 350px;
+    }
+
+    .sepprin2 {
+        padding: 0px 10% 0px 10%;
+        align-items: center;
+        margin-bottom: 25px;
+    }
+
+    .title {
+        margin-top: 25px;
+    }
+
+    .sepprin2 p {
+        text-align: center;
+    }
+
+    .trab {
+        width: 300px;
+    }
+
+    .skill {
+        width: 40%;
+    }
+
+    .sepcontact {
+        padding: 60px;
+    }
+}
+
+@media (max-width: 775px) {
+
+    .trab {
+        width: 250px;
+    }
+}
+
+@media (max-width: 750px) {
+
+    .trab {
+        width: 250px;
+    }
+
+    .navsep2 {
+        display: none;
+    }
+
+    .sepcontact {
+        padding: 30px;
+    }
+}
+
+
+@media (max-width: 700px) {
+
+    .navsep1 h1 {
+        font-size: 25px;
+
+    }
+
+    .navsep1 {
+        padding-left: 45px;
+    }
+
+    .smoke5 {
+        width: 300px;
+    }
+}
+
+@media (max-width: 640px) {
+
+    .principal {
+        gap: 50px;
+    }
+    
+    .sepprin1 {
+        margin-top: 50px;
+        height: fit-content;
+    }
+
+    .sepprin2 {
+        height: fit-content;
+    }
+
+    .sepprin1 img{
+        width: 250px;
+        height: 250px;
+    }
+
+    .sepprin2 p {
+        font-size: 14px;
+    }
+
+    .trab {
+        width: 200px;
+    }
+
+    .skill {
+        height: 250px;
+        width: 200px;
+    }
+
+    .sepcontact {
+        width: 80%;
+    }
+}
+
+
+
+@media (max-width: 600px) {
+
+    .skill {
+        width: 150px;
+        height: 180px;
+    }
+
+    .skill i {
+        font-size: 80px;
+    }
+    
+    .skill p {
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    .smoke1 {
+        width: 300px;
+    }
+
+    .smoke2 {
+        width: 300px;
+    }
+
+    .smoke3 {
+        width: 300px;
+    }
+
+    .smoke4 {
+        width: 300px;
+    }
+}
+
+@media (max-width: 520px) {
+    .trab {
+        width: 160px;
+        height: 250px;
+    }
+}
+
+@media (max-width: 460px) {
+
+    .skill {
+        width: 130px;
+        height: 140px;
+    }
+
+    .skill i {
+        font-size: 60px;
+    }
+    
+    .skill p {
+        font-weight: bold;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 460px) {
+
+    .services {
+        flex-direction: column;
+    }
+
+    .trab {
+        width: 100%;
+    }
+
+    .smoke1 {
+        height: 200px;
+        width: 100px;
+        filter: blur(60px);
+    }
+
+    .smoke2 {
+        height: 200px;
+        width: 100px;
+        filter: blur(60px);
+    }
+
+    .smoke3 {
+        height: 200px;
+        width: 100px;
+        filter: blur(60px);
+    }
+
+    .smoke4 {
+        height: 200px;
+        width: 100px;
+        filter: blur(60px);
+    }
+
+    .smoke5 {
+        height: 200px;
+        width: 100px;
+        filter: blur(60px);
+    }
+
+    .smoke6 {
+        height: 200px;
+        width: 100px;
+        filter: blur(60px);
+    }
+
+    .sepprin2 {
+        margin-bottom: 0px;
+    }
+
+    .principal {
+        margin-bottom: 25px;
+        height: auto;
+    }
+
+}
+
+@media (max-width: 450px) {
+
+    .sepcontact {
+        border: none;
+        padding: 0px 15px 0px 15px;
+    }
+
+}
+
+@media (max-width: 400px) {
+
+    .skill {
+        width: 110px;
+        height: 120px;
+    }
+
+    .skill i {
+        font-size: 50px;
+    }
+    
+    .skill p {
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    .sepcontact {
+        padding: 0px;
+    }
+
+}
+
+@media (max-width: 345px) {
+
+    .skill {
+        width: 100px;
+        height: 120px;
+    }
+
+    .skill i {
+        font-size: 50px;
+    }
+    
+    .skill p {
+        font-weight: bold;
+        font-size: 14px;
+    }
+
+}
